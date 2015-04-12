@@ -2,6 +2,12 @@ body {
 	height: 100vh;
 }
 
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+    /*Important because I am removing default Bootstrap padding*/
+}
+
 #header {
 	height: 8%;
 }
@@ -37,14 +43,15 @@ body {
 }
 
 #sidebar-list {
-	padding-top: 100px;
+	list-style: none;
+    padding: 0;
+    width: 100%;
 }
 
 #sidebar-list > li {
 	height: 100px;
-	padding-left: 20%;
 	padding-top: 25px;
-	list-style: none;
+	padding-left: 20%;
 	font-size: 100%;
 	font-weight: bold;
 }

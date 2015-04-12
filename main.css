@@ -48,7 +48,7 @@ body {
     width: 100%;
 }
 
-#sidebar-list > li {
+#sidebar-list > a > li {
 	height: 100px;
 	padding-top: 25px;
 	padding-left: 20%;

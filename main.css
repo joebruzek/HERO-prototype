@@ -1,0 +1,54 @@
+body {
+	height: 100vh;
+}
+
+#header {
+	height: 8%;
+}
+
+#header-title {
+	height: 100%;
+}
+
+#header-nav {
+	background-color: #673AB7;
+	height: 100%;
+}
+
+#screen {
+	height: 90%;
+}
+
+#sidebar {
+	height:100%;
+	outline: 1px solid #AAAAAA;
+}
+
+#title {
+	color: #AAAAAA;
+	padding-left: 50px;
+	font-size: 300%;
+}
+
+#current-nav {
+	color: #FFFFFF;
+	padding-left: 50px;
+	font-size: 200%;
+}
+
+#sidebar-list {
+	padding-top: 100px;
+}
+
+#sidebar-list > li {
+	height: 100px;
+	padding-left: 20%;
+	padding-top: 25px;
+	list-style: none;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+li:hover {
+	background-color: #EEEEEE;
+}

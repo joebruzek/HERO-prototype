@@ -1,5 +1,6 @@
 body {
 	height: 100vh;
+	 overflow-x: hidden;
 }
 
 .nopadding {
@@ -10,36 +11,28 @@ body {
 
 #header {
 	height: 8%;
+	background-color: #36464F;
 }
 
 #header-title {
 	height: 100%;
-}
-
-#header-nav {
-	background-color: #673AB7;
-	height: 100%;
+	background-color: #80CBC4;
 }
 
 #screen {
-	height: 90%;
+	height: 100%;
+	background-color: #36464F;
 }
 
 #sidebar {
 	height:100%;
-	outline: 1px solid #AAAAAA;
+	background-color: #EBEBEB;
 }
 
 #title {
-	color: #AAAAAA;
+	color: #FFF;
 	padding-left: 50px;
 	font-size: 300%;
-}
-
-#current-nav {
-	color: #FFFFFF;
-	padding-left: 50px;
-	font-size: 200%;
 }
 
 #sidebar-list {
@@ -57,7 +50,7 @@ body {
 }
 
 li:hover {
-	background-color: #EEEEEE;
+	background-color: #AAAAAA;
 }
 
 .block-list {

@@ -64,25 +64,53 @@ li:hover {
 	list-style: none;
 }
 
+#content {
+	height: 100%;
+	overflow: auto;
+	margin
+}
+
+#add-robot-div {
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#add-robot {
+	margin: 10px;
+	width: 100%;
+	height: 100px;
+	background-color: #00AA00;
+	border-radius: 10px;
+	font-size: 250%;
+	color: #FFFFFF;
+}
+
 #robots {
 	padding: 50px;
+	height: 80%;
+	overflow: auto;
 }
 
 #robots > li {
 	margin: 10px;
-	display: inline-block;
-	width: 300px;
+	/*display: inline-block;*/
+	border-radius: 10px;
+	overflow: hidden;
+	width: 100%;
 	background-color: #AAAAAA;
 	border: 1px solid #000000;
 }
 
 #robots > li > img {
-	width: 100%;
+	display: inline-block;
+	width: 300px;
 	height: 200px;
 }
 
 #robots > li > div {
-	width: 100%;
+	margin-left: 50px;
+	display: inline-block;
 	height: 100px;
 	text-align: center;
 	font-size: 200%;

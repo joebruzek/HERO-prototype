@@ -1,4 +1,5 @@
 var current_name = '';
+var current_index = 0;
 
 var pics = [
 	"http://www1.pcmag.com/media/images/340826-irobot-roomba-880-vacuum-cleaning-robot-angle.jpg", //roomba
@@ -34,7 +35,7 @@ $(document).ready(function() {
 function loadRobots() {
 	$('#robots').empty();
 	for (var i = 0; i < robots.length; i++) {
-		$('#robots').append('<li><img src="' + robots[i].pic + '"><div><p>' + robots[i].name + '</p><button class="task-button" onclick="current(' + i + ')"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a Task</button></div></li>');
+		$('#robots').append('<li><img src="' + robots[i].pic + '"><div><p>' + robots[i].name + '</p><button class="remove-button" onclick="removeButton(' + i + ')"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Robot</button><button class="task-button" onclick="current(' + i + ')"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a Task</button></div></li>');
 	}
 }
 
@@ -63,4 +64,18 @@ function current(num) {
 function addTask(name) {
 	$('#task-modal').modal('toggle');
 	$('#robot-name-task-modal').text(current_name);
+}
+
+function removeButton(num) {
+	console.log("REMOVING " + num);
+	current_index = num;
+	current_name = robots[num].name;
+	$('#remove-modal').modal('toggle');
+  	$('#robot-name-remove-modal').text(current_name);
+}
+
+function removeRobot() {
+  	robots.splice(current_index, 1);
+  	loadRobots();
+	$('#remove-modal').modal('hide');
 }

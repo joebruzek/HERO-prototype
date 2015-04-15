@@ -131,12 +131,23 @@ li:hover {
 }
 
 .task-button {
+	width: 20%;
 	background-color: #80CBC4;
 	padding: 10px;
 	border-radius: 10px;
 	position: absolute;
 	right: 10px;
 	bottom: 10px;
+}
+
+.remove-button {
+	width: 20%;
+	background-color: #80CBC4;
+	padding: 10px;
+	border-radius: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
 
 #robots > li > img {

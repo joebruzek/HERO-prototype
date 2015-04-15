@@ -88,6 +88,12 @@ a:hover {
 	font-weight: bold;
 }
 
+#calendar {
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+}
+
 li:hover {
 	background-color: #AAAAAA;
 }
@@ -104,14 +110,15 @@ li:hover {
 
 #add-robot-div {
 	width: 100%;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 #add-robot {
 	margin: 10px;
 	width: 100%;
-	height: 100px;
+	height: 10%;
+	padding: 1%;
 	background-color: #80CBC4;
 	border-radius: 10px;
 	font-size: 250%;
@@ -119,10 +126,10 @@ li:hover {
 }
 
 #robots {
-	margin-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
-	height: 80%;
+	margin-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 75%;
 	overflow: auto;
 }
 
@@ -137,24 +144,24 @@ li:hover {
 	border: 1px solid #000000;
 }
 
-.task-button {
+.robot-buttons {
 	width: 20%;
-	background-color: #80CBC4;
-	padding: 10px;
-	border-radius: 10px;
 	position: absolute;
-	right: 10px;
-	bottom: 10px;
+	height: 90%;
+	right: 1%;
+	top: 5%;
+	bottom: 5%;
 }
 
-.remove-button {
-	width: 20%;
-	background-color: #80CBC4;
-	padding: 10px;
-	border-radius: 10px;
-	position: absolute;
-	right: 10px;
-	top: 10px;
+.robot-button {
+	height: 50%;
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #AAAAAA;
+}
+
+.robot-button:hover {
+	background-color: #EEEEEE;
 }
 
 #robots > li > img {

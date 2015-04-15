@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>HERO</title>
+	<!-- Parse -->
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>  
 
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -11,19 +13,24 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-	<script src="main.js"></script>
+	<!-- The Calendar -->
+	<link rel="stylesheet" href="jquery.e-calendar.css">
+	<script src="jquery.e-calendar.js"></script>
+
+	<!-- Our Stuff -->
+	<script src="schedule.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
 <body>
-	<div class="row" id="header">
-		<div class="col-md-2" id="header-title">
-			<p id="title">HERO</p>
-		</div>
-	</div>
 	<div class="row" id="screen">
 		<div class="col-md-2 nopadding" id="sidebar">
+			<div id="header">
+				<div id="header-title">
+					<p id="title">HERO</p>
+				</div>
+			</div>
 			<ul id="sidebar-list">
 				<a href="index.html"><li>Robots</li></a>
 				<a href="schedule.html"><li>Schedule</li></a>
@@ -32,9 +39,13 @@
 			</ul>
 
 		</div>
+
+		
+
 		<!-- User Info: Thomas Anderson, Email: tqanderson34@gmail.com, Password: hcics3724 -->
 		<div class="col-md-10" style="padding-left: 25px; padding-right: 0px;" id="content">
-		<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tqanderson34%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style=" border-width:0 " width="1050" height="600" frameborder="0" scrolling="no"></iframe>
+			<div id="calendar"></div>
+			<!-- <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tqanderson34%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style=" border-width:0 " width="1050" height="600" frameborder="0" scrolling="no"></iframe> -->
 		</div>
 	</div>
 </body>

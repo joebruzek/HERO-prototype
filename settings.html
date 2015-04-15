@@ -17,29 +17,27 @@
 </head>
 
 <body>
+	<div class="row" id="header">
+		<div class="col-md-2" id="header-title">
+			<p id="title">HERO</p>
+		</div>
+	</div>
 	<div class="row" id="screen">
 		<div class="col-md-2 nopadding" id="sidebar">
-			<div id="header">
-				<div id="header-title">
-					<p id="title">HERO</p>
-				</div>
-			</div>
 			<ul id="sidebar-list">
-				<a href="../index.html"><li>Robots</li></a>
-				<a href="../schedule.html"><li>Schedule</li></a>
-				<a href="../settings.html"><li>Settings</li></a>
-				<a href="../help.html"><li>Help</li></a>
+				<a href="index.html"><li>Robots</li></a>
+				<a href="schedule.html"><li>Schedule</li></a>
+				<a class="sidebar-active"><li>Settings</li></a>
+				<a href="help.html"><li>Help</li></a>
 			</ul>
 		</div>
 		<div class="col-md-10 nopadding" id="content">
-			
 			<ul class="settings-list">
-				<a href="./settings/netconfig.html"><li>Network Configuration</li></a>
-				<a href="./settings/customize.html"><li>Customization</li></a>
-				<a href="./settings/privacy.html"><li>Privacy</li></a>
-				<a href="./settings/accountmgmt.html"><li>Account Management</li></a>
-				
-				<li style="color: #EBEBEB; padding-top: 100px; border-bottom: 1px solid #EBEBEB; "onclick="$('#updates-modal').modal('toggle');">Updates</li>
+				<a href="settings/netconfig.html"><li>Network Configuration</li></a>
+				<a href="settings/customize.html"><li>Customization</li></a>
+				<a href="settings/privacy.html"><li>Privacy</li></a>
+				<a href="settings/accountmgmt.html"><li>Account Management</li></a>
+				<li style="color: #EBEBEB; padding-top: 80px; border-bottom: 1px solid #EBEBEB; "onclick="$('#updates-modal').modal('toggle');">Updates</li>
 			</ul>
 		</div>
 	</div>

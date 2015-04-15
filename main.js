@@ -35,7 +35,7 @@ $(document).ready(function() {
 function loadRobots() {
 	$('#robots').empty();
 	for (var i = 0; i < robots.length; i++) {
-		$('#robots').append('<li><img src="' + robots[i].pic + '"><div><p>' + robots[i].name + '</p><button class="remove-button" onclick="removeButton(' + i + ')"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Robot</button><button class="task-button" onclick="current(' + i + ')"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a Task</button></div></li>');
+		$('#robots').append('<li><img src="' + robots[i].pic + '"><div><p>' + robots[i].name + '</p><div class="btn-group-vertical robot-buttons" role="group"><button type="button" class="btn robot-button" onclick="removeButton(' + i + ')"><span class="glyphicon glyphicon-remove" style="color:#FF0000;" aria-hidden="true"></span> Remove Robot</button><button type="button" class="btn robot-button" onclick="current(' + i + ')"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a Task</button></div></div></li>');
 	}
 }
 

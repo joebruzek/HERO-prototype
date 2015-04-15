@@ -16,14 +16,14 @@
 
 </head>
 
-<body>
-	<div class="row" id="header">
-		<div class="col-md-2" id="header-title">
-			<p id="title">HERO</p>
-		</div>
-	</div>
+<body> 
 	<div class="row" id="screen">
 		<div class="col-md-2 nopadding" id="sidebar">
+			<div id="header">
+				<div id="header-title">
+					<p id="title">HERO</p>
+				</div>
+			</div>
 			<ul id="sidebar-list">
 				<a href="/index.html"><li>Robots</li></a>
 				<a href="/schedule.html"><li>Schedule</li></a>
@@ -66,6 +66,30 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" id="save-robot" onclick="submitRobot()">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div class="modal fade" id="task-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add a Task</h4>
+        <p id="robot-name-task-modal"></p>
+      </div>
+      <div class="modal-body">
+        <div class="input-group"><input type="text" class="form-control" id="robot-name" placeholder="Robot Name"></div>
+        <div class="input-group"><input type="text" class="form-control" placeholder="Robot ID"></div>
+        <div class="input-group"><input type="text" class="form-control" placeholder="Some other thing"></div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save-robot" onclick="submitTask()">Submit Task</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

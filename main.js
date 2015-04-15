@@ -1,3 +1,5 @@
+var current_name = '';
+
 var pics = [
 	"http://www1.pcmag.com/media/images/340826-irobot-roomba-880-vacuum-cleaning-robot-angle.jpg", //roomba
 	"http://www.techreviewer.co.uk/wp-content/uploads/2014/08/project_ep_quadcopter_01_05.jpg",    //quadcopter
@@ -30,8 +32,9 @@ $(document).ready(function() {
 });
 
 function loadRobots() {
+	$('#robots').empty();
 	for (var i = 0; i < robots.length; i++) {
-		$('#robots').append('<li><img src="' + robots[i].pic + '"><div><p>' + robots[i].name + '</p></div></li>');
+		$('#robots').append('<li><img src="' + robots[i].pic + '"><div><p>' + robots[i].name + '</p><button class="task-button" onclick="current(' + i + ')"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a Task</button></div></li>');
 	}
 }
 
@@ -44,6 +47,20 @@ function submitRobot() {
 	var name = $('#robot-name').val();
 	var pic = pics[index];
 
-	$('#robots').prepend('<li><img src="' + pic + '"><div><p>' + name + '</p></div></li>');
+	robots.unshift({pic: pic, name: name});
+
+	loadRobots();
+
 	$('#modal').modal('toggle');
+}
+
+function current(num) {
+	current_name = robots[num].name;
+	$('#task-modal').modal('toggle');
+  	$('#robot-name-task-modal').text(current_name);
+}
+
+function addTask(name) {
+	$('#task-modal').modal('toggle');
+	$('#robot-name-task-modal').text(current_name);
 }
